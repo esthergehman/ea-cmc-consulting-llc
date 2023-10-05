@@ -48,7 +48,7 @@ a {
 
 .footer {
     display: flex;
-    background-color: white;
+    background-color: #c2def0;
     padding: 2rem;
     font-size: 1.4rem;
     justify-content: center;
@@ -59,11 +59,14 @@ a {
 
 .content {
     display: flex;
-    background-color: #b4bec4;
+    background-color: #c2def0;
     flex: 1;
     text-align: justify;
     padding: 2rem;
     margin: 0 auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
     font-size: 1.6rem;
     justify-content: center;
 }
@@ -97,15 +100,18 @@ a {
     margin-bottom: 0.5rem;
 }
 
-#services-pdf, #resume-pdf {
+#resume-pdf {
     width: 660px;
     height: 660px;
+}
+#services-img {
+    height: 660px;
+    width: 660px;
 }
 
 /* Contact Form Style */
 
 #contact{
-    background-color: #FFF;
     flex: 1;
     width: 90%;
     max-width: 60rem;
@@ -221,9 +227,9 @@ a {
 }
 
 .nav-list {
+    display: flex;
     gap: 1.6rem;
     flex-grow: 1;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -266,11 +272,6 @@ a {
     margin-bottom: 0;
 }
 
-.main-nav .nav-list .nav-item:hover, .nav-item:focus {
-    background-color: #000000;
-    color: white !important;
-}
-
 .nav-toggle:checked ~ .main-nav {
     display: flex;
     opacity: 1;
@@ -288,12 +289,6 @@ a {
 .nav-toggle:checked + .nav-icon .bar:nth-child(3) {
     transform: rotate(-45deg);
 }
-
-#nav-home:hover, #nav-services:hover, #nav-qualifications:hover, #nav-contact:hover {
-    background-color: ;
-    color: white;
-}
-
 
 /* DESKTOP STYLE */
 
@@ -367,9 +362,9 @@ a {
         margin: 0;
     }
 
-    .nav-item:hover, .nav-item:focus {
+    .nav-item:hover {
         background-color: #000000;
-        color: white !important;
+        color: white;
     }
 
 }
